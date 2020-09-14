@@ -1,0 +1,48 @@
+<div style="margin-top: 50px">
+  <h3>Routing in Angular</h3>
+  <p>
+    In Angular Routing is handled by the Framework. Routing configuration is
+    configured within routing modules which are coupled with a routed module
+    which typically expresses a page. Routes can be configured to be statically
+    loaded as part of the app or defined in a way that will support lazy loading
+    of that route and the associated assets of that routed module. Routes can
+    also contain parameters and certain routes can reasoned about as to whether
+    the user should be allowed to access them.
+  </p>
+</div>
+
+<div style="margin-top: 50px">
+  <h3>Routing Examples:</h3>
+  <P
+    >Here we can see some examples of how the routing can be configured and
+    associated configurations in code.
+  </P>
+  <nav>
+    <ul>
+      <li>
+        <a routerLink="./page-a/i-am-an-example-parameter"
+          >Page A (Not lazy loaded)</a
+        >
+      </li>
+      <li><a routerLink="./page-b">Page B (Not lazy loaded)</a></li>
+      <li>
+        <a routerLink="./page-b/page-b-subpage"
+          >Page B Subpage (Not lazy loaded)</a
+        >
+      </li>
+      <li>
+        <a routerLink="./undefined-route-that-does-not-exist"
+          >Not found Page (Any unknown path)</a
+        >
+      </li>
+      <li><a routerLink="./lazy-loaded-page">Lazy loaded page/module</a></li>
+      <li>
+        <a routerLink="./guarded-route"
+          >A route that has a guard.</a
+        >
+      </li>
+    </ul>
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>

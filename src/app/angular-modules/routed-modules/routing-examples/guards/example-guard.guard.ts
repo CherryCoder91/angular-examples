@@ -19,7 +19,7 @@ export class ExampleGuard implements CanActivate {
     | Promise<boolean | UrlTree>
     | boolean
     | UrlTree {
-    console.log('ExampleGuard says: "YOU SHALL NOT PASS!"');
+    alert('ExampleGuard says: "YOU SHALL NOT PASS!"');
     return false;
   }
 }

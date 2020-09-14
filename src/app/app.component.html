@@ -1,63 +1,17 @@
 <div class="toolbar">
-  <img
-    width="40"
-    alt="Angular Logo"
-    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
-  />
+  <a routerLink="./navigation">
+    <img
+      width="40"
+      alt="Angular Logo"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+    />
+  </a>
   <span>Angular Examples</span>
   <div class="spacer"></div>
 </div>
 
 <div class="content" role="main">
-  <h2>Angular Examples</h2>
-  <p>Illustrating best practice for Angular Framework features.</p>
-</div>
-
-<div style="margin-top: 50px">
-  <h3>Routing in Angular</h3>
-  <p>
-    In Angular Routing is handled by the Framework. Routing configuration is configured within routing modules which are coupled
-    with a routed module which typically expresses a page. Routes can be
-    configured to be statically loaded as part of the app or defined in a way
-    that will support lazy loading of that route and the associated assets of
-    that routed module. Routes can also contain parameters and certain routes can reasoned about as to whether the user should be allowed to access them.
-  </p>
-</div>
-
-<div style="margin-top: 50px">
-  <h3>Routing Examples:</h3>
-  <P
-    >Here we can see some examples of how the routing can be configured and
-    associated configurations in code.</P
-  >
-  <nav>
-    <ul>
-      <li>
-        <a routerLink="./page-a/i-am-an-example-parameter"
-          >Page A (Not lazy loaded)</a
-        >
-      </li>
-      <li><a routerLink="./page-b">Page B (Not lazy loaded)</a></li>
-      <li>
-        <a routerLink="./page-b/page-b-subpage"
-          >Page B Subpage (Not lazy loaded)</a
-        >
-      </li>
-      <li>
-        <a routerLink="./undefined-route-that-does-not-exist"
-          >Not found Page (Any unknown path)</a
-        >
-      </li>
-      <li><a routerLink="./lazy-loaded-page">Lazy loaded page/module</a></li>
-      <li>
-        <a routerLink="./guarded-route"
-          >A route that has a guard (See developer console)</a
-        >
-      </li>
-    </ul>
-  </nav>
-</div>
-
-<div style="border: solid 2px red; padding: 5px; margin-top: 50px">
-  <router-outlet></router-outlet>
+  <div style="margin: 20px">
+    <router-outlet></router-outlet>
+  </div>
 </div>
