@@ -1,0 +1,11 @@
+<label>
+  <span style="font-weight: bold;">Name: </span>
+  <input type="text" [formControl]="name" />
+</label>
+
+<p>
+  <span style="font-weight: bold;"> Value: </span>
+  {{ name.value }}
+</p>
+
+<button mat-raised-button color="primary" (click)="setName()">Set name 'James'</button>

@@ -17,6 +17,13 @@ const routes: Routes = [
       ).then((m) => m.ExampleRoutedPageModule),
   },
   {
+    path: 'form-examples',
+    loadChildren: () =>
+      import(
+        './angular-modules/routed-modules/form-examples/form-examples.module'
+      ).then((m) => m.FormExamplesModule),
+  },
+  {
     // redirect to home page
     path: '',
     redirectTo: 'navigation',
