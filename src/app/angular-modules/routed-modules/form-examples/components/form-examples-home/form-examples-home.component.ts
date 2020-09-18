@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionService } from '../dynamic-form/question-service';
 
 @Component({
   selector: 'app-form-examples-home',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormExamplesHomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public questionService: QuestionService) { }
 
   ngOnInit(): void {
   }

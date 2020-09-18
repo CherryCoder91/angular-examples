@@ -8,10 +8,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { BasicReactiveFormGroupComponent } from './components/basic-reactive-form-group/basic-reactive-form-group.component';
 import { ReactiveFormbuilderComponent } from './components/reactive-formbuilder/reactive-formbuilder.component';
+import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
+import { DynamicFormQuestionComponent } from './components/dynamic-form-question/dynamic-form-question.component';
 
 
 @NgModule({
-  declarations: [FormExamplesHomeComponent, BasicReactiveFormComponent, BasicReactiveFormGroupComponent, ReactiveFormbuilderComponent],
+  declarations: [FormExamplesHomeComponent, BasicReactiveFormComponent, BasicReactiveFormGroupComponent, ReactiveFormbuilderComponent, DynamicFormComponent, DynamicFormQuestionComponent],
   imports: [
     CommonModule,
     FormExamplesRoutingModule,
