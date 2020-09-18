@@ -1,0 +1,17 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" style="display: table-caption;">
+  
+    <label>
+      First Name:
+      <input type="text" formControlName="firstName">
+    </label>
+  
+    <label>
+      Last Name:
+      <input type="text" formControlName="lastName">
+    </label>
+  
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+
+  </form>
+
+  <p>Note: It is also possible to nest form groups within groups.</p>
